@@ -1,28 +1,23 @@
 #include <iostream>
-#include <vector>
-#include <string>
 #include <stdio.h>
+#include "fo-lib.h"
 
 using namespace std;
 
-FILE *stream, *stream2;
-
 int main()
 {
-    int err;
-    stream = fopen("filename.csv",_SH_DENYRW);
-    if( err == 0 ){
-        printf( "The file 'crt_fopen_s.c' was opened\n" );
-    }else{
-        printf( "The file 'crt_fopen_s.c' was not opened\n" );
+    FILE* inputDataFile;
+    
+    inputDataFile = operSet::withFile::openFile("students1.csv");
+    if (inputDataFile != 0) {
+        std::cout << "File exist and opened" << std::endl;
     }
-    /*
-    vector<string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};
-
-    for (const string& word : msg)
+    else
     {
-        cout << word << " ";
+        std::cout << "File opening error " << inputDataFile << std::endl;
     }
-    cout << endl;
-    */
+
+    FILE* DataFile = operSet::withFile::openFile("");
+
+
 }

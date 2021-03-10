@@ -1,0 +1,2 @@
+﻿  fo-lib.cpp
+C:\Users\Одмин\source\repos\mvs13\lab2-files-operation\lib\fo-lib\fo-lib.cpp(31,1): fatal error C1010: непредвиденный конец файла во время поиска предкомпилированного заголовка. Возможно, вы забыли добавить директиву "#include "pch.h"" в источник.
