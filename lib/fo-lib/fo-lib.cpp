@@ -19,6 +19,17 @@ namespace operSet
 		}
 
 	}
+
+	int withFile::closeFile(FILE* fileHandler)
+	{
+		int	result = fclose(fileHandler);
+		if (result) {
+			return result;
+		}
+		else {
+			return 0;
+		}
+	}
 	
 	withFile::withFile(const char* FileName)
 	{

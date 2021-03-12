@@ -14,5 +14,6 @@ namespace operSet
 		~withFile();
 
 		static FILE* openFile(const char* FileName);
+		static int closeFile(FILE* fileHandler);
 	};
 }
