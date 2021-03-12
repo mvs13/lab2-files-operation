@@ -15,5 +15,7 @@ namespace operSet
 
 		static FILE* openFile(const char* FileName);
 		static int closeFile(FILE* fileHandler);
+		static int readNumber(int* Number, FILE* fileHandler);
+		static int readStudentData(FILE* fileHandler);
 	};
 }
